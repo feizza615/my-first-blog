@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import environ
 
+
 # Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
@@ -42,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'blog.apps.BlogConfig',
+    'blog.apps.BlogConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
