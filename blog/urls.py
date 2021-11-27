@@ -11,6 +11,6 @@ router = routers.DefaultRouter()
 router.register(r'post', PostViewSet)
 
 urlpatterns = [
-   path(' ', include(router.urls)),
-   path(' ', views.post_list, name='post_list')
+   path('',include(router.urls)),
+   path('',views.post_list,name='post_list')
 ]
